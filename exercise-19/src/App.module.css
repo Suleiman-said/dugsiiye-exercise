@@ -1,0 +1,133 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f3e8ff, #dbeafe);
+  padding: 2rem 1rem;
+}
+
+.card {
+  max-width: 28rem;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+.form {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1 1 0%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #a855f7;
+}
+
+.addButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #9333ea;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.addButton:hover {
+  background-color: #7e22ce;
+}
+
+.addButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #a855f7, 0 0 0 4px #ffffff;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.todoItem:hover {
+  background-color: #f3f4f6;
+}
+
+.checkbox {
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  accent-color: #9333ea;
+  cursor: pointer;
+}
+
+.todoText {
+  flex: 1 1 0%;
+  color: #374151;
+}
+
+.completed {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  opacity: 0;
+  padding: 0.25rem 0.5rem;
+  color: #dc2626;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.todoItem:hover .deleteButton {
+  opacity: 1;
+}
+
+.deleteButton:hover {
+  color: #b91c1c;
+}
+
+.emptyText {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 1.5rem;
+}
